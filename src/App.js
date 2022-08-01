@@ -1,5 +1,14 @@
 import React from 'react';
 
+import facebook from './img/icons/icon-facebook.svg';
+import twitter from './img/icons/icon-twitter.svg';
+import linkedin from './img/icons/icon-linkedin.svg';
+import instagram from './img/icons/icon-instagram.svg';
+import p_facebook from './img/icons/icon-facebook-purple.svg';
+import p_twitter from './img/icons/icon-twitter-purple.svg';
+import p_linkedin from './img/icons/icon-linkedin-purple.svg';
+import s_asus from './img/sponsors/asus.svg';
+
 export default function App() {
   return (
     <div>
@@ -52,49 +61,35 @@ export default function App() {
             target="_blank"
             href="https://www.facebook.com/Ingenier%C3%ADa-en-Inform%C3%A1tica-y-Sistemas-UNJBG-1933587416925656"
           >
-            <img
-              className="icon__img"
-              src="./img/icons/icon-facebook.svg"
-              alt="icon-facebook"
-            />
+            <img className="icon__img" src={facebook} alt="icon-facebook" />
           </a>
           <a className="icon" target="_blank" href="https://twitter.com/">
-            <img
-              className="icon__img"
-              src="./img/icons/icon-twitter.svg"
-              alt="iconTwitter"
-            />
+            <img className="icon__img" src={twitter} alt="iconTwitter" />
           </a>
           <a
             className="icon"
             target="_blank"
             href="https://www.linkedin.com/feed/"
           >
-            <img
-              className="icon__img"
-              src="./img/icons/icon-linkedin.svg"
-              alt="icon-linkedin"
-            />
+            <img className="icon__img" src={linkedin} alt="icon-linkedin" />
           </a>
           <a className="icon" target="_blank" href="https://www.instagram.com/">
-            <img
-              className="icon__img"
-              src="./img/icons/icon-instagram.svg"
-              alt="icon-instagram"
-            />
+            <img className="icon__img" src={instagram} alt="icon-instagram" />
           </a>
         </section>
         {/*  */}
         <section
           className="main-banner"
           id="inicio"
-          style={{ backgroundImage: 'url(./img/background/banner_1.jpg)' }}
+          style={{
+            backgroundImage: 'url(https://i.ibb.co/f9Qd4bC/banner-1.jpg)',
+          }}
         >
           {/* LOGO */}
           <a className="main-logo" href="#">
             <img
               className="main-logo__img"
-              src="./img/logo.png"
+              src="https://i.ibb.co/rkMdCQB/logo.pngs"
               alt="Logo-esis-postmaster"
             />
           </a>
@@ -159,7 +154,7 @@ export default function App() {
                 </div>
               </div>
               <div className="ponente__img">
-                <img src="./img/speakers/ponente.jpg" alt="ponente" />
+                <img src="https://i.ibb.co/qycFCyL/ponente.jpg" alt="ponente" />
               </div>
               <div className="ponente__info">
                 <h2 className="ponente__name">Manuel Cotrado</h2>
@@ -175,162 +170,15 @@ export default function App() {
                 <div className="ponente__redess flx-a-c">
                   Redes_sociales = {'{'}
                   <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-facebook-purple.svg"
-                      alt="iconFacebook"
-                    />{' '}
+                    <img src={p_facebook} alt="iconFacebook" />{' '}
                   </a>
                   ,
                   <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-twitter-purple.svg"
-                      alt="iconTwitter"
-                    />{' '}
+                    <img src={p_twitter} alt="iconTwitter" />{' '}
                   </a>
                   ,
                   <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-linkedin-purple.svg"
-                      alt="iconLinkedin"
-                    />{' '}
-                  </a>
-                  {'}'}
-                </div>
-              </div>
-            </article>
-            <article className="ponente">
-              <div className="ponente__ocupacion">
-                <div className="flx-a-c">
-                  01 <span /> Analista de datos
-                </div>
-              </div>
-              <div className="ponente__img">
-                <img src="./img/speakers/ponente.jpg" alt="ponente" />
-              </div>
-              <div className="ponente__info">
-                <h2 className="ponente__name">Manuel Cotrado</h2>
-                <p className="ponente__tema">
-                  &lt; Building Data Driven Companies &gt;
-                </p>
-                <p className="ponente__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  nobis architecto voluptate recusandae facere, commodi tempore
-                  eos nemo reprehenderit, accusantium deserunt dolore iure enim
-                  eligendi incidunt? Laborum beatae maiores quae?
-                </p>
-                <div className="ponente__redess flx-a-c">
-                  Redes_sociales = {'{'}
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-facebook-purple.svg"
-                      alt="iconFacebook"
-                    />{' '}
-                  </a>
-                  ,
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-twitter-purple.svg"
-                      alt="iconTwitter"
-                    />{' '}
-                  </a>
-                  ,
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-linkedin-purple.svg"
-                      alt="iconLinkedin"
-                    />{' '}
-                  </a>
-                  {'}'}
-                </div>
-              </div>
-            </article>
-            <article className="ponente">
-              <div className="ponente__ocupacion">
-                <div className="flx-a-c">
-                  01 <span /> Analista de datos
-                </div>
-              </div>
-              <div className="ponente__img">
-                <img src="./img/speakers/ponente.jpg" alt="ponente" />
-              </div>
-              <div className="ponente__info">
-                <h2 className="ponente__name">Manuel Cotrado</h2>
-                <p className="ponente__tema">
-                  &lt; Building Data Driven Companies &gt;
-                </p>
-                <p className="ponente__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  nobis architecto voluptate recusandae facere, commodi tempore
-                  eos nemo reprehenderit, accusantium deserunt dolore iure enim
-                  eligendi incidunt? Laborum beatae maiores quae?
-                </p>
-                <div className="ponente__redess flx-a-c">
-                  Redes_sociales = {'{'}
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-facebook-purple.svg"
-                      alt="iconFacebook"
-                    />{' '}
-                  </a>
-                  ,
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-twitter-purple.svg"
-                      alt="iconTwitter"
-                    />{' '}
-                  </a>
-                  ,
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-linkedin-purple.svg"
-                      alt="iconLinkedin"
-                    />{' '}
-                  </a>
-                  {'}'}
-                </div>
-              </div>
-            </article>
-            <article className="ponente">
-              <div className="ponente__ocupacion">
-                <div className="flx-a-c">
-                  01 <span /> Analista de datos
-                </div>
-              </div>
-              <div className="ponente__img">
-                <img src="./img/speakers/ponente.jpg" alt="ponente" />
-              </div>
-              <div className="ponente__info">
-                <h2 className="ponente__name">Manuel Cotrado</h2>
-                <p className="ponente__tema">
-                  &lt; Building Data Driven Companies &gt;
-                </p>
-                <p className="ponente__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  nobis architecto voluptate recusandae facere, commodi tempore
-                  eos nemo reprehenderit, accusantium deserunt dolore iure enim
-                  eligendi incidunt? Laborum beatae maiores quae?
-                </p>
-                <div className="ponente__redess flx-a-c">
-                  Redes_sociales = {'{'}
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-facebook-purple.svg"
-                      alt="iconFacebook"
-                    />{' '}
-                  </a>
-                  ,
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-twitter-purple.svg"
-                      alt="iconTwitter"
-                    />{' '}
-                  </a>
-                  ,
-                  <a className="icon__s" href="./#">
-                    <img
-                      src="./img/icons/icon-linkedin-purple.svg"
-                      alt="iconLinkedin"
-                    />{' '}
+                    <img src={p_linkedin} alt="iconLinkedin" />{' '}
                   </a>
                   {'}'}
                 </div>
@@ -353,7 +201,20 @@ export default function App() {
             <pre className="agenda__consulta">
               mysql&gt; SELECT * FROM agenda
             </pre>
-            <div className="agenda__container" id="agenda__container" />
+            <div className="agenda__container" id="agenda__container">
+              <pre>
+                + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                - - - - - - +
+              </pre>
+              <pre>
+                | <span class="pre--white">07:00</span> ||{' '}
+                <span class="pre--white">Inaguración del evento </span>|
+              </pre>
+              <pre>
+                + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                - - - - - - +
+              </pre>
+            </div>
           </div>
           <div className="evento-info flx-a-c section-l">
             <div className="evento-info__container flx-a-c">
@@ -388,7 +249,7 @@ export default function App() {
         <section className="section-lugar">
           <div className="locale flx-a-c">
             <div className="locale__img">
-              <img src="./img/place/auditorio_1.jpg" alt="" />
+              <img src="https://i.ibb.co/GvWWMGR/auditorio-1.jpg" alt="" />
             </div>
             <div className="locale__info">
               <h2 className="locale__title">Auditorio de contabilidad</h2>
@@ -420,28 +281,7 @@ export default function App() {
           </div>
           <div className="auspiciadores section-l">
             <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/alienware.svg" alt="" />
-            </a>
-            <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/asus.svg" alt="" />
-            </a>
-            <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/msi.svg" alt="" />
-            </a>
-            <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/nvidia.svg" alt="" />
-            </a>
-            <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/nvidia.svg" alt="" />
-            </a>
-            <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/msi.svg" alt="" />
-            </a>
-            <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/asus.svg" alt="" />
-            </a>
-            <a className="auspiciadores__link" href="#">
-              <img src="./img/sponsors/alienware.svg" alt="" />
+              <img src={s_asus} alt="" />
             </a>
           </div>
         </section>
