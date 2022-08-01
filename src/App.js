@@ -207,8 +207,8 @@ export default function App() {
                 - - - - - - +
               </pre>
               <pre>
-                | <span class="pre--white">07:00</span> ||{' '}
-                <span class="pre--white">Inaguración del evento </span>|
+                | <span className="pre--white">07:00</span> ||{' '}
+                <span className="pre--white">Inaguración del evento </span>|
               </pre>
               <pre>
                 + - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
